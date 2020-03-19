@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @favroite.user_id %>
+</p>
+
+<p>
+  <strong>Show:</strong>
+  <%= @favroite.show_id %>
+</p>
+
+<%= link_to 'Edit', edit_favroite_path(@favroite) %> |
+<%= link_to 'Back', favroites_path %>

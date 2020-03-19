@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  duration: 1.5
+  timing: MyString
+  name: MyString
+
+two:
+  duration: 1.5
+  timing: MyString
+  name: MyString

@@ -1,0 +1,27 @@
+<%= form_with(model: favroite, local: true) do |form| %>
+  <% if favroite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(favroite.errors.count, "error") %> prohibited this favroite from being saved:</h2>
+
+      <ul>
+      <% favroite.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :show_id %>
+    <%= form.number_field :show_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
